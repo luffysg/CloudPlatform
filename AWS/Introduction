@@ -1,0 +1,64 @@
+https://www.youtube.com/watch?v=IT1X42D1KeA&t=1246s
+
+What is AWS
+AWS is a secure cloud services platform offering compute power, database storage, content delivery and other functionality to help business scale and grow
+
+Infrastructure: regions and availability zones
+
+Domain of AWS:
+  compute: EC2, elastic cloud compute, clean slate; elastic bin store, EC2 with pre-defined library; lambda
+  migration: physical migration, snowball
+  security and compliance
+  storage: store executable files; s3,
+  networking: vpc
+  messaging:
+  database: cannot store executable
+  management tools:
+  
+Compute:
+EC2: raw server, resizable compute capacity in the cloud, which can be customized accordinlgy to your need
+Lambda: advanced version of EC2; cannot be used to host an app, can only be used for background tasks; waits for a trigger
+Elastic beanstalk: used to host an app, automatic form of EC2; with pre-defined environment (like PHP environent)
+Elastic load balancer: distribute the workload on the deployed instances
+Autoscaling: scale up and down automatically; whenever CPU usage goes above 70%, automatically start a new server
+
+Storage:
+S3: object oriented file system; objects stored in a bucket, a folder in the root is called a bucket
+Cloudfront: content delivery network
+Elastic block storage: block level storage, provides high IOPS; used together with EC2, one EC2 instance can connect o multiple EBS volumes
+Glacier: data archiving service, offer low price storage (magnetic disk)
+Snowball: physical transfer of data to aws infrastructure
+Storage gateway: provide seamless integration between your on premise servers and the AWS infrastructure
+
+Database:
+RDS: relational database management service; automatically done RDS
+Aurora: database server; based on MySQL, with 5X faster than mySQL
+DynamoDB: management service; non relational database management service (NoSQL?)
+ElasticCache: set up, manage and scale a distributed cache-in environment in the cloud
+Redshift: fully managed petabyte-scale data warehouse service; analytics
+
+Network:
+VPC: virtual network where in you launch your AWS resources
+Direct connect: direct connect is a leased line using which you can directly connect to the aws infrastrucure
+Route 53:domain name system, url to aws instances
+
+AWS management services:
+Cloudwatch: cloud monitoring tool
+CloudFormation: templatize the aws; snapshot of the infrastructure
+Cloudtrail: logging service for troubleshooting, stored in S3
+CLI: command line interface, replacement of GUI
+Opsworks: configuration management tools; stack, layers
+Trusted advisor: personal assistant on expenditure
+
+security domain:
+IAM: identification and authentication management tool
+KMS: create and manage encription keys to encrypt your data;public keys and private keys
+
+App services:
+SES: bulk email services;
+SQS: simple queue service; acts as buffer; list tasks, server reads the tasks from the queue and executes them
+SNS: notification service based on triggers;
+
+AWS pricing:
+pay as you go; pay less by using more
+save when you reserve
